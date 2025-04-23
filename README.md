@@ -1,5 +1,5 @@
 ---
-title: Untitled
+title: CodePath Capstone Project
 
 ---
 
@@ -73,7 +73,8 @@ Wait Time is an app that displays the current wait time of MARTA trains at a sel
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/user-attachments/assets/ba0c3fc9-c624-4340-a286-bf91410a6ad1" width=600>
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
