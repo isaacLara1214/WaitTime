@@ -72,7 +72,7 @@ Wait Time is an app that displays the current wait time of MARTA trains at a sel
 
 ## Wireframes
 
-<img src="https://github.com/user-attachments/assets/ba0c3fc9-c624-4340-a286-bf91410a6ad1" width=600>
+<img src="https://github.com/user-attachments/assets/2df8f9bf-ecfb-49a9-a5a9-42e9b6591bb2" width=600>
 
 
 ### [BONUS] Digital Wireframes & Mockups
