@@ -7,40 +7,53 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		F480DF722DB7FE41009C1F91 /* PBXContainerItemProxy */ = {
+		F406FEA02DB961BB00B4B011 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F480DF592DB7FE3F009C1F91 /* Project object */;
+			containerPortal = F406FE812DB961B900B4B011 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F480DF602DB7FE3F009C1F91;
+			remoteGlobalIDString = F406FE882DB961B900B4B011;
 			remoteInfo = "Wait Time";
 		};
-		F480DF7C2DB7FE41009C1F91 /* PBXContainerItemProxy */ = {
+		F406FEAA2DB961BC00B4B011 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F480DF592DB7FE3F009C1F91 /* Project object */;
+			containerPortal = F406FE812DB961B900B4B011 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F480DF602DB7FE3F009C1F91;
+			remoteGlobalIDString = F406FE882DB961B900B4B011;
 			remoteInfo = "Wait Time";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F480DF612DB7FE3F009C1F91 /* Wait Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wait Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F480DF712DB7FE41009C1F91 /* Wait TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wait TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F480DF7B2DB7FE41009C1F91 /* Wait TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wait TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F406FE892DB961B900B4B011 /* Wait Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wait Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F406FE9F2DB961BB00B4B011 /* Wait TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wait TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F406FEA92DB961BC00B4B011 /* Wait TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wait TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F406FEB12DB961BC00B4B011 /* Exceptions for "Wait Time" folder in "Wait Time" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F406FE882DB961B900B4B011 /* Wait Time */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F480DF632DB7FE3F009C1F91 /* Wait Time */ = {
+		F406FE8B2DB961B900B4B011 /* Wait Time */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F406FEB12DB961BC00B4B011 /* Exceptions for "Wait Time" folder in "Wait Time" target */,
+			);
 			path = "Wait Time";
 			sourceTree = "<group>";
 		};
-		F480DF742DB7FE41009C1F91 /* Wait TimeTests */ = {
+		F406FEA22DB961BB00B4B011 /* Wait TimeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Wait TimeTests";
 			sourceTree = "<group>";
 		};
-		F480DF7E2DB7FE41009C1F91 /* Wait TimeUITests */ = {
+		F406FEAC2DB961BC00B4B011 /* Wait TimeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Wait TimeUITests";
 			sourceTree = "<group>";
@@ -48,21 +61,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F480DF5E2DB7FE3F009C1F91 /* Frameworks */ = {
+		F406FE862DB961B900B4B011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480DF6E2DB7FE41009C1F91 /* Frameworks */ = {
+		F406FE9C2DB961BB00B4B011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480DF782DB7FE41009C1F91 /* Frameworks */ = {
+		F406FEA62DB961BC00B4B011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F480DF582DB7FE3F009C1F91 = {
+		F406FE802DB961B900B4B011 = {
 			isa = PBXGroup;
 			children = (
-				F480DF632DB7FE3F009C1F91 /* Wait Time */,
-				F480DF742DB7FE41009C1F91 /* Wait TimeTests */,
-				F480DF7E2DB7FE41009C1F91 /* Wait TimeUITests */,
-				F480DF622DB7FE3F009C1F91 /* Products */,
+				F406FE8B2DB961B900B4B011 /* Wait Time */,
+				F406FEA22DB961BB00B4B011 /* Wait TimeTests */,
+				F406FEAC2DB961BC00B4B011 /* Wait TimeUITests */,
+				F406FE8A2DB961B900B4B011 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F480DF622DB7FE3F009C1F91 /* Products */ = {
+		F406FE8A2DB961B900B4B011 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F480DF612DB7FE3F009C1F91 /* Wait Time.app */,
-				F480DF712DB7FE41009C1F91 /* Wait TimeTests.xctest */,
-				F480DF7B2DB7FE41009C1F91 /* Wait TimeUITests.xctest */,
+				F406FE892DB961B900B4B011 /* Wait Time.app */,
+				F406FE9F2DB961BB00B4B011 /* Wait TimeTests.xctest */,
+				F406FEA92DB961BC00B4B011 /* Wait TimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +108,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F480DF602DB7FE3F009C1F91 /* Wait Time */ = {
+		F406FE882DB961B900B4B011 /* Wait Time */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F480DF852DB7FE41009C1F91 /* Build configuration list for PBXNativeTarget "Wait Time" */;
+			buildConfigurationList = F406FEB22DB961BC00B4B011 /* Build configuration list for PBXNativeTarget "Wait Time" */;
 			buildPhases = (
-				F480DF5D2DB7FE3F009C1F91 /* Sources */,
-				F480DF5E2DB7FE3F009C1F91 /* Frameworks */,
-				F480DF5F2DB7FE3F009C1F91 /* Resources */,
+				F406FE852DB961B900B4B011 /* Sources */,
+				F406FE862DB961B900B4B011 /* Frameworks */,
+				F406FE872DB961B900B4B011 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F480DF632DB7FE3F009C1F91 /* Wait Time */,
+				F406FE8B2DB961B900B4B011 /* Wait Time */,
 			);
 			name = "Wait Time";
 			packageProductDependencies = (
 			);
 			productName = "Wait Time";
-			productReference = F480DF612DB7FE3F009C1F91 /* Wait Time.app */;
+			productReference = F406FE892DB961B900B4B011 /* Wait Time.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F480DF702DB7FE41009C1F91 /* Wait TimeTests */ = {
+		F406FE9E2DB961BB00B4B011 /* Wait TimeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F480DF882DB7FE41009C1F91 /* Build configuration list for PBXNativeTarget "Wait TimeTests" */;
+			buildConfigurationList = F406FEB72DB961BC00B4B011 /* Build configuration list for PBXNativeTarget "Wait TimeTests" */;
 			buildPhases = (
-				F480DF6D2DB7FE41009C1F91 /* Sources */,
-				F480DF6E2DB7FE41009C1F91 /* Frameworks */,
-				F480DF6F2DB7FE41009C1F91 /* Resources */,
+				F406FE9B2DB961BB00B4B011 /* Sources */,
+				F406FE9C2DB961BB00B4B011 /* Frameworks */,
+				F406FE9D2DB961BB00B4B011 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F480DF732DB7FE41009C1F91 /* PBXTargetDependency */,
+				F406FEA12DB961BB00B4B011 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				F480DF742DB7FE41009C1F91 /* Wait TimeTests */,
+				F406FEA22DB961BB00B4B011 /* Wait TimeTests */,
 			);
 			name = "Wait TimeTests";
 			packageProductDependencies = (
 			);
 			productName = "Wait TimeTests";
-			productReference = F480DF712DB7FE41009C1F91 /* Wait TimeTests.xctest */;
+			productReference = F406FE9F2DB961BB00B4B011 /* Wait TimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F480DF7A2DB7FE41009C1F91 /* Wait TimeUITests */ = {
+		F406FEA82DB961BC00B4B011 /* Wait TimeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F480DF8B2DB7FE41009C1F91 /* Build configuration list for PBXNativeTarget "Wait TimeUITests" */;
+			buildConfigurationList = F406FEBA2DB961BC00B4B011 /* Build configuration list for PBXNativeTarget "Wait TimeUITests" */;
 			buildPhases = (
-				F480DF772DB7FE41009C1F91 /* Sources */,
-				F480DF782DB7FE41009C1F91 /* Frameworks */,
-				F480DF792DB7FE41009C1F91 /* Resources */,
+				F406FEA52DB961BC00B4B011 /* Sources */,
+				F406FEA62DB961BC00B4B011 /* Frameworks */,
+				F406FEA72DB961BC00B4B011 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F480DF7D2DB7FE41009C1F91 /* PBXTargetDependency */,
+				F406FEAB2DB961BC00B4B011 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				F480DF7E2DB7FE41009C1F91 /* Wait TimeUITests */,
+				F406FEAC2DB961BC00B4B011 /* Wait TimeUITests */,
 			);
 			name = "Wait TimeUITests";
 			packageProductDependencies = (
 			);
 			productName = "Wait TimeUITests";
-			productReference = F480DF7B2DB7FE41009C1F91 /* Wait TimeUITests.xctest */;
+			productReference = F406FEA92DB961BC00B4B011 /* Wait TimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F480DF592DB7FE3F009C1F91 /* Project object */ = {
+		F406FE812DB961B900B4B011 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					F480DF602DB7FE3F009C1F91 = {
+					F406FE882DB961B900B4B011 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					F480DF702DB7FE41009C1F91 = {
+					F406FE9E2DB961BB00B4B011 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = F480DF602DB7FE3F009C1F91;
+						TestTargetID = F406FE882DB961B900B4B011;
 					};
-					F480DF7A2DB7FE41009C1F91 = {
+					F406FEA82DB961BC00B4B011 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = F480DF602DB7FE3F009C1F91;
+						TestTargetID = F406FE882DB961B900B4B011;
 					};
 				};
 			};
-			buildConfigurationList = F480DF5C2DB7FE3F009C1F91 /* Build configuration list for PBXProject "Wait Time" */;
+			buildConfigurationList = F406FE842DB961B900B4B011 /* Build configuration list for PBXProject "Wait Time" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = F480DF582DB7FE3F009C1F91;
+			mainGroup = F406FE802DB961B900B4B011;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F480DF622DB7FE3F009C1F91 /* Products */;
+			productRefGroup = F406FE8A2DB961B900B4B011 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F480DF602DB7FE3F009C1F91 /* Wait Time */,
-				F480DF702DB7FE41009C1F91 /* Wait TimeTests */,
-				F480DF7A2DB7FE41009C1F91 /* Wait TimeUITests */,
+				F406FE882DB961B900B4B011 /* Wait Time */,
+				F406FE9E2DB961BB00B4B011 /* Wait TimeTests */,
+				F406FEA82DB961BC00B4B011 /* Wait TimeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F480DF5F2DB7FE3F009C1F91 /* Resources */ = {
+		F406FE872DB961B900B4B011 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480DF6F2DB7FE41009C1F91 /* Resources */ = {
+		F406FE9D2DB961BB00B4B011 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480DF792DB7FE41009C1F91 /* Resources */ = {
+		F406FEA72DB961BC00B4B011 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F480DF5D2DB7FE3F009C1F91 /* Sources */ = {
+		F406FE852DB961B900B4B011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480DF6D2DB7FE41009C1F91 /* Sources */ = {
+		F406FE9B2DB961BB00B4B011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480DF772DB7FE41009C1F91 /* Sources */ = {
+		F406FEA52DB961BC00B4B011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +269,76 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F480DF732DB7FE41009C1F91 /* PBXTargetDependency */ = {
+		F406FEA12DB961BB00B4B011 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F480DF602DB7FE3F009C1F91 /* Wait Time */;
-			targetProxy = F480DF722DB7FE41009C1F91 /* PBXContainerItemProxy */;
+			target = F406FE882DB961B900B4B011 /* Wait Time */;
+			targetProxy = F406FEA02DB961BB00B4B011 /* PBXContainerItemProxy */;
 		};
-		F480DF7D2DB7FE41009C1F91 /* PBXTargetDependency */ = {
+		F406FEAB2DB961BC00B4B011 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F480DF602DB7FE3F009C1F91 /* Wait Time */;
-			targetProxy = F480DF7C2DB7FE41009C1F91 /* PBXContainerItemProxy */;
+			target = F406FE882DB961B900B4B011 /* Wait Time */;
+			targetProxy = F406FEAA2DB961BC00B4B011 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F480DF832DB7FE41009C1F91 /* Debug */ = {
+		F406FEB32DB961BC00B4B011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T29V2RDDRE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wait Time/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isaac.Wait-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F406FEB42DB961BC00B4B011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T29V2RDDRE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wait Time/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isaac.Wait-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F406FEB52DB961BC00B4B011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +401,7 @@
 			};
 			name = Debug;
 		};
-		F480DF842DB7FE41009C1F91 /* Release */ = {
+		F406FEB62DB961BC00B4B011 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -388,65 +457,7 @@
 			};
 			name = Release;
 		};
-		F480DF862DB7FE41009C1F91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wait Time/Preview Content\"";
-				DEVELOPMENT_TEAM = T29V2RDDRE;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.isaac.Wait-Time";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F480DF872DB7FE41009C1F91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wait Time/Preview Content\"";
-				DEVELOPMENT_TEAM = T29V2RDDRE;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.isaac.Wait-Time";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F480DF892DB7FE41009C1F91 /* Debug */ = {
+		F406FEB82DB961BC00B4B011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -465,7 +476,7 @@
 			};
 			name = Debug;
 		};
-		F480DF8A2DB7FE41009C1F91 /* Release */ = {
+		F406FEB92DB961BC00B4B011 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,7 +495,7 @@
 			};
 			name = Release;
 		};
-		F480DF8C2DB7FE41009C1F91 /* Debug */ = {
+		F406FEBB2DB961BC00B4B011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -501,7 +512,7 @@
 			};
 			name = Debug;
 		};
-		F480DF8D2DB7FE41009C1F91 /* Release */ = {
+		F406FEBC2DB961BC00B4B011 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -521,43 +532,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F480DF5C2DB7FE3F009C1F91 /* Build configuration list for PBXProject "Wait Time" */ = {
+		F406FE842DB961B900B4B011 /* Build configuration list for PBXProject "Wait Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F480DF832DB7FE41009C1F91 /* Debug */,
-				F480DF842DB7FE41009C1F91 /* Release */,
+				F406FEB52DB961BC00B4B011 /* Debug */,
+				F406FEB62DB961BC00B4B011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F480DF852DB7FE41009C1F91 /* Build configuration list for PBXNativeTarget "Wait Time" */ = {
+		F406FEB22DB961BC00B4B011 /* Build configuration list for PBXNativeTarget "Wait Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F480DF862DB7FE41009C1F91 /* Debug */,
-				F480DF872DB7FE41009C1F91 /* Release */,
+				F406FEB32DB961BC00B4B011 /* Debug */,
+				F406FEB42DB961BC00B4B011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F480DF882DB7FE41009C1F91 /* Build configuration list for PBXNativeTarget "Wait TimeTests" */ = {
+		F406FEB72DB961BC00B4B011 /* Build configuration list for PBXNativeTarget "Wait TimeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F480DF892DB7FE41009C1F91 /* Debug */,
-				F480DF8A2DB7FE41009C1F91 /* Release */,
+				F406FEB82DB961BC00B4B011 /* Debug */,
+				F406FEB92DB961BC00B4B011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F480DF8B2DB7FE41009C1F91 /* Build configuration list for PBXNativeTarget "Wait TimeUITests" */ = {
+		F406FEBA2DB961BC00B4B011 /* Build configuration list for PBXNativeTarget "Wait TimeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F480DF8C2DB7FE41009C1F91 /* Debug */,
-				F480DF8D2DB7FE41009C1F91 /* Release */,
+				F406FEBB2DB961BC00B4B011 /* Debug */,
+				F406FEBC2DB961BC00B4B011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F480DF592DB7FE3F009C1F91 /* Project object */;
+	rootObject = F406FE812DB961B900B4B011 /* Project object */;
 }
