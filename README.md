@@ -49,7 +49,7 @@ Wait Time is an app that displays the current wait time of MARTA trains at a sel
 
 ### 2. Screen Archetypes
 
-- [ ] Stream
+- [x] Stream
 * User can see all rail stations
 * User can see wait times for the two closest trains
 - [ ] Detail
@@ -65,7 +65,7 @@ Wait Time is an app that displays the current wait time of MARTA trains at a sel
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] Home View
+- [x] Home View
 * => Station Detailed View
 - [ ] Station Detailed View
 * => Home View
