@@ -86,16 +86,9 @@ Wait Time is an app that displays the current wait time of MARTA trains at a sel
 ### Networking
 
 - MARTA Real-Time Rail Arrivals API
-- let url = URL(string: "https://developerservices.itsmarta.com:18096/itsmarta/railrealtimearrivals/developerservices/traindata?apiKey=YOUR_API_KEY")!
-
-URLSession.shared.dataTask(with: url) { data, _, error in
-    guard let data = data else { return }
-    do {
-        let arrivals = try JSONDecoder().decode([TrainArrival].self, from: data)
-        // handle arrivals
-    } catch {
-        print("Error decoding: \(error)")
-    }
-}.resume()
-
-- GET https://developerservices.itsmarta.com:18096/itsmarta/railrealtimearrivals/developerservices/traindata?apiKey=YOUR_API_KEY
+- Requests per screen 
+| Screen                   | API Requests                                                                 |
+|--------------------------|------------------------------------------------------------------------------|
+| Home (Station List)      | Fetch all train arrivals → group by station and line                        |
+| Station Detail View      | Filter and sort arrivals by direction and destination for selected station  |
+- EndPoints: GET https://developerservices.itsmarta.com:18096/itsmarta/railrealtimearrivals/developerservices/traindata?apiKey=YOUR_API_KEY
