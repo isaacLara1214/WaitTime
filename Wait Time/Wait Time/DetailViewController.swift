@@ -7,50 +7,85 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITableViewDataSource {
-    
+class DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
     @IBOutlet weak var tableView: UITableView!
-    
+
     var station: StationInfo?
+
+    private var arrivalsByDirection: [String: [TrainArrival]] = [:]
+    private var directionList: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = station?.name ?? "Station Detail"
+        self.title = station?.name ?? "Station Details"
         tableView.dataSource = self
+        tableView.delegate = self
+
+        organizeArrivalsByDirection()
+    }
+
+    private func organizeArrivalsByDirection() {
+        guard let station = station else { return }
+
+        var grouped: [String: [TrainArrival]] = [:]
+
+        for (_, arrivals) in station.arrivalsByLine {
+            for arrival in arrivals {
+                grouped[arrival.direction, default: []].append(arrival)
+            }
+        }
+
+        // Sort each direction group by ETA ascending and limit to 3
+        for (direction, arrivals) in grouped {
+            let sorted = arrivals.sorted {
+                Int($0.waitingSeconds) ?? 9999 < Int($1.waitingSeconds) ?? 9999
+            }
+            grouped[direction] = Array(sorted.prefix(3))
+        }
+
+        self.arrivalsByDirection = grouped
+        self.directionList = grouped.keys.sorted()
     }
 
     // MARK: - UITableViewDataSource
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return station?.arrivalsByLine.keys.count ?? 0
+        return directionList.count
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let line = station?.arrivalsByLine.keys.sorted()[section] else { return nil }
-        return "Line: \(line)"
+        return "Direction: \(directionList[section])"
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let line = station?.arrivalsByLine.keys.sorted()[section],
-              let arrivals = station?.arrivalsByLine[line] else { return 0 }
-        return min(2, arrivals.count) // Show only 2 shortest waits
+        let direction = directionList[section]
+        let arrivals = arrivalsByDirection[direction] ?? []
+        let groupedByDestination = Dictionary(grouping: arrivals) { $0.destination }
+        return groupedByDestination.keys.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath)
-        
-        let line = station?.arrivalsByLine.keys.sorted()[indexPath.section] ?? ""
-        let arrivals = station?.arrivalsByLine[line]?.sorted {
-            Int($0.waitingSeconds) ?? 9999 < Int($1.waitingSeconds) ?? 9999
-        } ?? []
 
-        let arrival = arrivals[indexPath.row]
-        
-        var content = cell.defaultContentConfiguration()
-        content.text = "Destination: \(arrival.destination)"
-        content.secondaryText = "Arrives in: \(arrival.waitingTime)"
-        cell.contentConfiguration = content
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let direction = directionList[indexPath.section]
+        let grouped = Dictionary(grouping: arrivalsByDirection[direction] ?? []) { $0.destination }
+        let destination = grouped.keys.sorted()[indexPath.row]
+        let arrivals = (grouped[destination] ?? []).sorted {
+            Int($0.waitingSeconds) ?? 9999 < Int($1.waitingSeconds) ?? 9999
+        }
+
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StationETAGroupCell", for: indexPath) as? StationETAGroupCell else {
+            return UITableViewCell()
+        }
+
+        cell.configure(with: destination, arrivals: Array(arrivals.prefix(4)))
         return cell
+    }
+
+
+
+    private func imageFor(line: String, direction: String) -> UIImage? {
+        let imageName = "\(line.capitalized)_\(direction.uppercased())"
+        return UIImage(named: imageName) ?? UIImage(systemName: "tram.fill")
     }
 }

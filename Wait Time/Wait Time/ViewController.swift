@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var arrivals: [TrainArrival] = []
     var stations: [StationInfo] = []
+    var refreshTimer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         
         fetchData()
+        startRefreshTimer()
+    }
+    
+    deinit {
+        refreshTimer?.invalidate()
+    }
+    
+    func startRefreshTimer() {
+        refreshTimer = Timer.scheduledTimer(withTimeInterval: 60.0, repeats: true) { [weak self] _ in
+            self?.fetchData()
+        }
     }
     
     func fetchData() {
@@ -57,6 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             StationInfo(name: stationName, arrivalsByLine: lineDict)
         }.sorted { $0.name < $1.name }
     }
+
 
     // MARK: - UITableViewDataSource
 
@@ -97,6 +110,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
 
+    
 
     // MARK: - UITableViewDelegate
 
