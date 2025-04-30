@@ -21,6 +21,14 @@ Original App Design Project - README Template
 
 Wait Time is an app that displays the current wait time of MARTA trains at a selected station. the app will display the the wait time for each direction as well as indicate which rail line the train is on.
 
+<div>
+    <a href="https://www.loom.com/share/4498c2ee7b7548b1aee2671b994203b3">
+    </a>
+    <a href="https://www.loom.com/share/4498c2ee7b7548b1aee2671b994203b3">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4498c2ee7b7548b1aee2671b994203b3-631d295d409f13f3-full-play.gif">
+    </a>
+  </div>
+
 ### App Evaluation
 
 [Evaluation of your app across the following attributes]
