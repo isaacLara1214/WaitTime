@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func fetchData() {
-        let urlString = "https://developerservices.itsmarta.com:18096/itsmarta/railrealtimearrivals/developerservices/traindata?apiKey=7cee6274-46d4-412d-ab76-45b368e2afc5"
+        let urlString = "APIKey"
         guard let url = URL(string: urlString) else { return }
 
         URLSession.shared.dataTask(with: url) { data, _, error in
